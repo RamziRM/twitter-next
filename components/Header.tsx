@@ -30,7 +30,15 @@ const Header: React.FC<HeaderProps> = ({ label, showBackArrow }) => {
                 "
           />
         )}
-        <h1>{label}</h1>
+        <h1
+          className="
+          text-white
+          text-lg
+          font-semibold
+          "
+        >
+          {label}
+        </h1>
       </div>
     </div>
   );
