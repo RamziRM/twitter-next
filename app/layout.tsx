@@ -3,6 +3,7 @@
 
 import "../styles/globals.css";
 import Sidebar from "../components/sidebar/Sidebar";
+import FollowBar from "../components/FollowBar";
 
 export const metadata = {
   title: "Create Next App",
@@ -22,6 +23,7 @@ const RootLayout: React.FC<RootProps> = ({ children }) => {
           <div className="col-span-3 lg:col-span-2 border-x-[1px] border-neutral-500">
             {children}
           </div>
+          <FollowBar />
         </div>
       </div>
     </div>
