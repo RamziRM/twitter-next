@@ -50,7 +50,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
       "
       >
         <Icon size={28} color="white" />
-        <p className="hidden lg:block text-white text-base">{label}</p>
+        <p className="hidden lg:block text-white text-xl">{label}</p>
       </div>
     </div>
   );
