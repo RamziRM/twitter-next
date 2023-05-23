@@ -1,7 +1,12 @@
 // This is home page of the app
+import Header from "../components/Header";
 
 const Home = () => {
-  return <div className="text-xl">Hello world</div>;
+  return (
+    <>
+      <Header label="Home" />
+    </>
+  );
 };
 
 export default Home;
