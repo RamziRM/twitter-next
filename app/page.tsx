@@ -1,7 +1,7 @@
-export default function Home() {
-  return (
-    <div>
-      <h1 className="">Hello saas world - launching soon</h1>
-    </div>
-  );
-}
+// This is home page of the app
+
+const Home = () => {
+  return <div className="text-xl">Hello world</div>;
+};
+
+export default Home;
