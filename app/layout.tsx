@@ -16,18 +16,25 @@ interface RootProps {
 
 const RootLayout: React.FC<RootProps> = ({ children }) => {
   return (
-    <div className="h-screen bg-slate-800">
-      <div className="container h-full mx-auto xl:px-30 max-w-6xl">
-        <div className="grid grid-cols-4 h-full">
-          <Sidebar />
-          <div className="col-span-3 lg:col-span-2 border-x-[1px] border-neutral-500">
-            {children}
+    <html lang="en">
+      <body>
+        <div className="h-screen bg-slate-800">
+          <div className="container h-full mx-auto xl:px-30 max-w-6xl">
+            <div className="grid grid-cols-4 h-full">
+              <Sidebar />
+              <div className="col-span-3 lg:col-span-2 border-x-[1px] border-neutral-500">
+                {children}
+              </div>
+              <FollowBar />
+            </div>
           </div>
-          <FollowBar />
         </div>
-      </div>
-    </div>
+      </body>
+    </html>
   );
 };
 
 export default RootLayout;
+
+// invariant expected app router to be mounted --error / bug
+// fixed by adding html + body tags
