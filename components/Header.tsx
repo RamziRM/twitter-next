@@ -2,6 +2,7 @@
 import { useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { BiArrowBack } from "react-icons/bi";
+import { Button } from "./ui/button";
 
 interface HeaderProps {
   label: string;
@@ -39,6 +40,7 @@ const Header: React.FC<HeaderProps> = ({ label, showBackArrow }) => {
         >
           {label}
         </h1>
+        <Button variant={"secondary"}>BTN</Button>
       </div>
     </div>
   );
