@@ -4,6 +4,7 @@
 import "../styles/globals.css";
 import Sidebar from "../components/sidebar/Sidebar";
 import FollowBar from "../components/FollowBar";
+import Modal from "@/components/Modal";
 
 export const metadata = {
   title: "Create Next App",
